@@ -6,7 +6,7 @@ module Mutations
     type Types::UserType
 
     def resolve(email:, password:)
-      User.create!(email: email, password_digest: password)
+      User.create!(email: email, password: password)
     end
   end
 end
